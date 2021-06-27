@@ -1,0 +1,22 @@
+{
+  "name": "fractionsol",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "truffle compile",
+    "test": "truffle test",
+    "start": "truffle migrate",
+    "deploy:mainnet": "truffle migrate --network mainnet",
+    "deploy:testnet": "truffle migrate --network testnet",
+    "deploy:dev": "truffle migrate --network development",
+    "reset:testnet": "truffle migrate --network testnet --reset"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.1.0",
+    "@openzeppelin/test-helpers": "^0.5.11",
+    "@truffle/hdwallet-provider": "^1.4.1",
+    "dotenv": "^10.0.0",
+    "truffle": "^5.3.11"
+  }
+}
